@@ -35,9 +35,9 @@ const config = merge(conmonConfig, {
       filename: "css/[name].css",
     }),
     new CleanWebpackPlugin(),
-    // new BundleAnalyzerPlugin({
-    //   analyzerPort: 5728,
-    // }),
+    new BundleAnalyzerPlugin({
+      analyzerPort: 5728,
+    }),
   ],
   optimization: {
     usedExports: true,
